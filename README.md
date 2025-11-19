@@ -408,3 +408,22 @@ Special recognition to researchers advancing FlipAttack, IRIS, and CurXecute met
 ⭐ **If this research is valuable to your work, please cite it and star the repository!**
 
 🔬 **Research-backed • Industry-validated • Community-driven**
+
+---
+
+## 📄 Full Research Paper
+
+The complete research paper is available in multiple formats:
+
+- **Markdown:** [Security_Vulnerabilities_CLI_LLM_Deployments_Research_Paper_1.1.md](./Security_Vulnerabilities_CLI_LLM_Deployments_Research_Paper_1.1.md)
+- **PDF:** [Security_Vulnerabilities_CLI_LLM_Deployments_Research_Paper_1.1.pdf](./Security_Vulnerabilities_CLI_LLM_Deployments_Research_Paper_1.1.pdf)
+- **RTF:** [Security_Vulnerabilities_CLI_LLM_Deployments_Research_Paper_1.1.rtf](./Security_Vulnerabilities_CLI_LLM_Deployments_Research_Paper_1.1.rtf)
+
+**Paper Highlights:**
+- 📖 40+ pages of comprehensive analysis
+- 🔬 95 peer-reviewed sources
+- 📊 Empirical validation of attack success rates
+- 🛡️ Defense-in-depth framework with implementation guidance
+- 🔍 Gap analysis: Research ↔️ Industry ↔️ Regulation
+- ✅ CERTIFIED READY for arXiv submission
+
