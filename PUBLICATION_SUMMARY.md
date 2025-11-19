@@ -2,7 +2,7 @@
 
 ## Research Paper Successfully Published
 
-**Repository:** https://github.com/hah23255/cli-llm-security-research  
+**Repository:** https://github.com/hah23255/security-vulnerabilities-cli-llm  
 **Status:** ✅ PUBLIC  
 **Date:** November 19, 2025
 
@@ -182,7 +182,7 @@
   institution={Independent Security Research},
   type={Technical Report},
   note={Pre-print. arXiv:25xx.xxxxx},
-  url={https://github.com/hah23255/cli-llm-security-research}
+  url={https://github.com/hah23255/security-vulnerabilities-cli-llm}
 }
 ```
 

@@ -4,8 +4,8 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg)](https://arxiv.org/abs/25xx.xxxxx)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Status](https://img.shields.io/badge/Status-Peer_Review-yellow)](https://github.com/hah23255/cli-llm-security-research)
-[![DOI](https://img.shields.io/badge/DOI-Pending-orange)](https://github.com/hah23255/cli-llm-security-research)
+[![Status](https://img.shields.io/badge/Status-Peer_Review-yellow)](https://github.com/hah23255/security-vulnerabilities-cli-llm)
+[![DOI](https://img.shields.io/badge/DOI-Pending-orange)](https://github.com/hah23255/security-vulnerabilities-cli-llm)
 
 > 📄 **Technical Report** | **Pre-print Version** | **November 2025**
 
@@ -154,7 +154,7 @@ This research includes the **Silent-Alarm-Detector** as a reference implementati
 ## 📚 Repository Contents
 
 ```
-cli-llm-security-research/
+security-vulnerabilities-cli-llm/
 ├── README.md                                          # This file
 ├── Security_Vulnerabilities_CLI_LLM_Deployments_Research_Paper_1.1.md
 │                                                       # Full research paper (Markdown)
@@ -182,7 +182,7 @@ cli-llm-security-research/
   institution={Independent Security Research},
   type={Technical Report},
   note={Pre-print. arXiv:25xx.xxxxx},
-  url={https://github.com/hah23255/cli-llm-security-research}
+  url={https://github.com/hah23255/security-vulnerabilities-cli-llm}
 }
 ```
 
@@ -190,7 +190,7 @@ cli-llm-security-research/
 ```
 Hristov, H. (2025). Security vulnerabilities and defensive mechanisms in CLI/terminal-based 
 large language model deployments: A comprehensive research synthesis. Technical Report. 
-Pre-print arXiv:25xx.xxxxx. https://github.com/hah23255/cli-llm-security-research
+Pre-print arXiv:25xx.xxxxx. https://github.com/hah23255/security-vulnerabilities-cli-llm
 ```
 
 ### IEEE
@@ -333,8 +333,8 @@ Despite years of research and defensive mechanisms, prompt injection attacks dem
 
 We welcome feedback and discussion on this research:
 
-- **Issues:** [GitHub Issues](https://github.com/hah23255/cli-llm-security-research/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/hah23255/cli-llm-security-research/discussions)
+- **Issues:** [GitHub Issues](https://github.com/hah23255/security-vulnerabilities-cli-llm/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/hah23255/security-vulnerabilities-cli-llm/discussions)
 - **Email:** Contact via [LinkedIn](https://www.linkedin.com/in/hristo-hristov-93868648)
 
 ---
