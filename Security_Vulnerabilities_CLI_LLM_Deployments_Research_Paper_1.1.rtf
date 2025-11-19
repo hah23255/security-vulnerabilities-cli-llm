@@ -1,0 +1,921 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Helvetica{\*\falt Arial};}{\f5\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 Noto Sans CJK SC;}{\f7\fswiss\fprq0\fcharset128 Noto Sans Devanagari;}{\f8\fnil\fprq2\fcharset0 Noto Sans Devanagari;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052 Normal;}
+{\*\cs15\snext15\hich\af4\loch\f4\ul\ulc0 ListLabel 1;}
+{\*\cs16\snext16\loch\cf9\ul\ulc0 Hyperlink;}
+{\*\cs17\snext17\hich\af4\loch\f4\i\ul\ulc0 ListLabel 2;}
+{\s18\sbasedon0\snext19\rtlch\af8\afs28 \ltrch\hich\af5\loch\widctlpar\hyphpar1\sb240\sa120\keepn\f5\fs28\dbch\af6 Heading;}
+{\s19\sbasedon0\snext19\loch\sl276\slmult1\widctlpar\hyphpar1\sb0\sa140 Body Text;}
+{\s20\sbasedon19\snext20\rtlch\af7 \ltrch\loch\sl276\slmult1\widctlpar\hyphpar1\sb0\sa140 List;}
+{\s21\sbasedon0\snext21\rtlch\af7\afs24\ai \ltrch\loch\widctlpar\hyphpar1\sb120\sa120\noline\fs24\i Caption;}
+{\s22\sbasedon0\snext22\rtlch\af7 \ltrch\loch\widctlpar\hyphpar1\noline Index;}
+}{\*\generator LibreOffice/24.2.7.2$Linux_X86_64 LibreOffice_project/420$Build-2}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr2025\mo11\dy19\hr0\min59}{\printim\yr2025\mo11\dy19\hr1\min0}}{\*\userprops}\deftab720
+\hyphauto1\viewscale86\formshade\paperh15840\paperw12240\margl1440\margr1440\margt924\margb1137\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn924\margbsxn1137\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs36\b\f4\loch
+Security Vulnerabilities and Defensive Mechanisms in CLI/Terminal-Based Large Language Model Deployments: A Comprehensive Research Synthesis}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa9\ltrpar{\hich\af4\loch\b\f4\loch
+Technical Report}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa9\ltrpar{\hich\af4\loch\i\f4\loch
+Pre-print Version for arXiv/IACR ePrint Archive}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Date:}{\hich\af4\loch\f4\loch
+ November }{\hich\af4\loch\f4\loch
+02}{\hich\af4\loch\f4\loch
+, 2025}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Classification:}{\hich\af4\loch\f4\loch
+ Industry White Paper / Security Research Community Pre-print}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Target Audience:}{\hich\af4\loch\f4\loch
+ Security Practitioners, ML Engineers, System Administrators, Risk Managers}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Document Type:}{\hich\af4\loch\f4\loch
+ 6-8 Page Short Paper Format}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+Abstract}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Background:}{\hich\af4\loch\f4\loch
+ Command-line interface (CLI) deployments of large language models (LLMs) have proliferated rapidly across development environments, yet face converging security challenges from traditional CLI attack surfaces and novel AI-specific vulnerabilities.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Methods:}{\hich\af4\loch\f4\loch
+ We conducted a comprehensive systematic review synthesizing 85+ research sources including peer-reviewed academic papers, industry security reports, and benchmark datasets spanning 2022-2025. Our analysis employed structured gap identification methodologies across adversarial ML, model security, system integrity, prompt security, data poisoning, and model extraction attack vectors.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Results:}{\hich\af4\loch\f4\loch
+ Analysis reveals 97.2% success rates for system prompt extraction attacks [1], 218% year-over-year increases in state-sponsored AI infrastructure attacks [2], and 77% of organizations reporting AI system breaches in 2024 [3]. Despite contributions from 600+ security experts to frameworks like OWASP Top 10 for LLMs [4], prompt injection remains fundamentally unsolved with 2025 research demonstrating 98% attack success rates against GPT-4o [86] and 87.2% against safety-aligned models [89], confirming persistent exploitability despite defensive advances. Major CLI platforms including Cursor IDE, GitHub Copilot, and ChatGPT exhibit systematic vulnerabilities (94 CVEs documented) with CVSS scores reaching 8.8 [6-8].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Conclusions:}{\hich\af4\loch\f4\loch
+ CLI LLM security demands defense-in-depth strategies combining architectural isolation, cryptographic integrity verification, behavioral monitoring, and regulatory compliance frameworks. Critical research gaps persist in agentic AI security, supply chain protections, and empirically-validated defensive mechanisms under adaptive adversary models.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Keywords:}{\hich\af4\loch\f4\loch
+ Large Language Models, Command-Line Interface Security, Prompt Injection, Adversarial Machine Learning, AI Security, Terminal Security, Model Integrity}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+1. Introduction}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+1.1 Background and Motivation}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+The rapid integration of large language models into command-line interface tools has fundamentally transformed software development workflows. Tools such as GitHub Copilot, Cursor IDE, Claude Code CLI, and OpenAI\u8217\'92s command-line interfaces process millions of developer interactions daily [9]. However, this proliferation occurs against a backdrop of inadequate security frameworks specifically designed for CLI-based AI deployments.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Traditional CLI security concerns\u8212\'97including command injection, privilege escalation, and environment variable exploitation\u8212\'97converge with novel AI-specific attack vectors including prompt injection, model extraction, and training data poisoning [10, 11]. This convergence creates a unique threat landscape requiring interdisciplinary security approaches.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+1.2 Research Objectives}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+This comprehensive synthesis addresses three primary research questions:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+RQ1:}{\hich\af4\loch\f4\loch
+ What are the documented security vulnerabilities specific to CLI/terminal-based LLM deployments, and what is their prevalence and exploitability?}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+RQ2:}{\hich\af4\loch\f4\loch
+ What defensive mechanisms have been proposed or implemented, and what is their empirical effectiveness under adversarial conditions?}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+RQ3:}{\hich\af4\loch\f4\loch
+ What critical gaps exist between academic research, industry practice, and regulatory frameworks for CLI LLM security?}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+1.3 Scope and Limitations}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Our analysis focuses specifically on command-line and terminal-based LLM deployments, distinguishing these from web-based or GUI applications. We synthesize research from peer-reviewed academic publications (ACM CCS, USENIX Security, IEEE S&P, NDSS), industry security vendor reports (CrowdStrike, Palo Alto Networks, Microsoft), government frameworks (NIST AI RMF, EU AI Act), and open benchmark datasets.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Limitations include: (1) rapidly evolving threat landscape with monthly disclosure of new vulnerabilities; (2) limited long-term empirical data on defense effectiveness; (3) publication bias toward novel attacks versus incremental defensive improvements; (4) proprietary security measures deployed by major vendors that remain undocumented in public literature.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+2. Methodology}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+2.1 Systematic Literature Review Protocol}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+We conducted a systematic literature review following PRISMA guidelines adapted for security research [12]. Our search strategy employed:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Database Coverage:}{\hich\af4\loch\f4\loch
+ ACM Digital Library, IEEE Xplore, arXiv.org, IACR ePrint Archive, USENIX Digital Library, Google Scholar, vendor security blogs, CVE databases}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Search Terms:}{\hich\af4\loch\f4\loch
+ (\u8220\'93large language model\u8221\'94 OR \u8220\'93LLM\u8221\'94 OR \u8220\'93generative AI\u8221\'94) AND (\u8220\'93security\u8221\'94 OR \u8220\'93vulnerability\u8221\'94 OR \u8220\'93attack\u8221\'94 OR \u8220\'93defense\u8221\'94) AND (\u8220\'93command-line\u8221\'94 OR \u8220\'93CLI\u8221\'94 OR \u8220\'93terminal\u8221\'94 OR \u8220\'93prompt injection\u8221\'94 OR \u8220\'93adversarial\u8221\'94)}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Inclusion Criteria:}{\hich\af4\loch\f4\loch
+ (1) Published 2022-2025; (2) peer-reviewed or from recognized security institutions; (3) directly relevant to LLM security or CLI security; (4) empirical evaluation or systematic analysis}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Quality Assessment:}{\hich\af4\loch\f4\loch
+ Oxford CEBM evidence levels adapted for security research, GRADE framework for recommendation strength}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+2.2 Gap Analysis Framework}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+We employed a structured gap identification methodology examining:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab }{\hich\af4\loch\b\f4\loch
+Methodological gaps:}{\hich\af4\loch\f4\loch
+ Incomplete testing frameworks, insufficient validation protocols}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab }{\hich\af4\loch\b\f4\loch
+Empirical data gaps:}{\hich\af4\loch\f4\loch
+ Unexplored attack surfaces, unmeasured defensive efficacy\line }
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab }{\hich\af4\loch\b\f4\loch
+Theoretical framework gaps:}{\hich\af4\loch\f4\loch
+ Incomplete threat models, missing security formalizations}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab }{\hich\af4\loch\b\f4\loch
+Practical implementation gaps:}{\hich\af4\loch\f4\loch
+ Deployment security, operational considerations}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+2.3 Threat Intelligence Integration}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Quantitative data was extracted from industry reports including CrowdStrike Global Threat Report [2], Microsoft Digital Defense Report [13], Orca Security State of AI Security Report [3], and Google Threat Intelligence Group assessments [14]. Vulnerability data was systematically cataloged from CVE databases, vendor security advisories, and responsible disclosure reports.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+3. Results}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+3.1 CLI LLM Attack Surface Taxonomy}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Our analysis identified five primary attack surfaces in CLI-based LLM deployments:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs24\b\f4\loch
+3.1.1 Direct CLI Attack Vectors}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Argument Injection:}{\hich\af4\loch\f4\loch
+ Exploitation of unvalidated command-line parameters enables arbitrary command execution. Documented attacks against code generation tools demonstrate 98.3% success rates when protection mechanisms are absent [15].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Environment Variable Exploitation:}{\hich\af4\loch\f4\loch
+ Manipulation of $PATH, $LD_PRELOAD, and shell configuration variables enables privilege escalation and malicious library injection. Red Canary documented 37% increase in adversarial abuse of AI CLI tools through environment manipulation in 2024 [16].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Command Substitution:}{\hich\af4\loch\f4\loch
+ Backtick and $() syntax embedded within LLM prompts facilitate code execution through shell expansion mechanisms [17].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs24\b\f4\loch
+3.1.2 LLM-Specific Vulnerabilities}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Prompt Injection Attacks:}{\hich\af4\loch\f4\loch
+ Analysis of OWASP Top 10 for LLM Applications 2025 [4] identifies prompt injection as the primary vulnerability class. Systematic evaluation across 200+ Custom GPTs demonstrated 97.2% system prompt extraction success and 100% file leakage rates [1]. Liu et al.\u8217\'92s benchmark of 5 attack techniques against 10 LLMs across 7 tasks confirmed persistent exploitability [18].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+2024-2025 Persistent Vulnerability Evidence:}{\hich\af4\loch\f4\loch
+ Recent research confirms continued exploitability of modern LLMs. FlipAttack methodology achieves ~98% attack success rate on GPT-4o through character-order manipulation, with ~98% bypass rate against 5 guardrail models [86]. IRIS jailbreaking demonstrates 98% success on GPT-4 and GPT-4 Turbo in under 13 queries, outperforming prior TAP results (75% ASR, 20+ queries) [87]. Systematic red-teaming evaluation of 1,400+ adversarial prompts found GPT-4 exhibited 87.2% attack success rate, with successful prompts transferring to Claude 2 at 64.1% success [89]. BIPIA benchmark evaluation of 25 LLMs confirms GPT-3.5-turbo and GPT-4 demonstrate elevated vulnerability to indirect prompt injection despite strong capabilities [88].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb57\sa237\ltrpar{\hich\af4\loch\f4\loch
+Prompt injection subdivides into:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab }{\hich\af4\loch\b\f4\loch
+Direct (Jailbreaking):}{\hich\af4\loch\f4\loch
+ Zou et al.\u8217\'92s universal adversarial suffixes [19] achieve transferable attacks across GPT-4, Bard, and Claude}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb285\sa285\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab }{\hich\af4\loch\b\f4\loch
+Indirect:}{\hich\af4\loch\f4\loch
+ Greshake et al.\~[20] demonstrated cross-domain exploitation where LLMs consume malicious instructions from external sources (websites, PDFs, emails, databases)}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Model Extraction:}{\hich\af4\loch\f4\loch
+ Adversarial queries enable intellectual property theft and safety mechanism reverse engineering [21].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Data Poisoning:}{\hich\af4\loch\f4\loch
+ Yao et al.\u8217\'92s PoisonPrompt research [22] demonstrates backdoor injection effective across hard and soft prompts with only 0.1% poisoned training data achieving 40% negative response rates in instruction-tuned models.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs24\b\f4\loch
+3.1.3 Documented CVE Analysis}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Systematic CVE analysis reveals critical vulnerabilities across major platforms:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Cursor IDE:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab CVE-2025-54135 (CurXecute): Remote code execution via MCP auto-start, CVSS 8.6. Discovered by AIM Security; disclosed August 1, 2025 [6].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab CVE-2025-54136 (MCPoison): Persistent execution through MCP trust bypass, CVSS 7.2. Discovered by Check Point Research; disclosed August 5, 2025 [6].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab 94 inherited Chromium CVEs from outdated engine [7]}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Clarification on CVE Analysis:}{\hich\af4\loch\f4\loch
+ CVE-2025-54135 and CVE-2025-54136 vulnerabilities were discovered and responsibly disclosed by third-party security researchers. This paper provides systematic analysis and contextualization within the broader CLI LLM security landscape.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+GitHub Copilot:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab CVE-2025-62449: Path traversal vulnerability, CVSS 6.8 [8]}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab CVE-2025-62453: Improper validation of AI-generated output [8]}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab 39.33% of top suggestions contain security vulnerabilities [23]}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+ChatGPT:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab Atlas CSRF: 97% attack success rate for persistent memory injection [24]}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab ShadowLeak: Zero-click vulnerability in Deep Research agent [24]}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab Seven vulnerability classes including indirect prompt injection, zero-click attacks, memory poisoning [24]}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+3.2 Defensive Mechanisms and Effectiveness}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs24\b\f4\loch
+3.2.1 Industry Framework Analysis}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+OWASP Top 10 for LLM Applications 2025:}{\hich\af4\loch\f4\loch
+ Developed by 600+ security experts across 18 countries, this framework catalogs vulnerabilities beyond prompt injection including sensitive information disclosure, supply chain vulnerabilities, data poisoning, improper output handling, excessive agency, system prompt leakage, vector/embedding weaknesses, misinformation, and unbounded consumption [4].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+NIST AI Risk Management Framework:}{\hich\af4\loch\f4\loch
+ Published as NIST AI 100-1 [25], establishes voluntary governance through four functions (GOVERN, MAP, MEASURE, MANAGE) with seven trustworthy AI characteristics including security and resilience.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+MITRE ATLAS:}{\hich\af4\loch\f4\loch
+ Adapts ATT&CK framework with 14 tactics and 56 techniques specific to ML/AI systems, incorporating case studies of reconnaissance, resource development, initial access, ML model access, execution, persistence, defense evasion, and impact [26].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs24\b\f4\loch
+3.2.2 Technical Defense Evaluation}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Input Validation and Filtering:}{\hich\af4\loch\f4\loch
+ Fine-tuned classifiers achieve 92% accuracy with RoBERTa and 99.1% with DeBERTa on 662-prompt datasets, outperforming GPT-4\u8217\'92s 87.4% [27]. Commercial solutions including Rebuff, Lakera Guard, and Prompt Armor provide production-grade filtering.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Preference Optimization Approaches:}{\hich\af4\loch\f4\loch
+ SecAlign defense [28] demonstrates ~0% attack success rate against optimization-based attacks while preserving utility (AlpacaEval2 WinRate maintained within 0.7% standard error). Training requires 4\u215\'d7 NVIDIA Tesla A100 (80GB) for 3 epochs with LoRA optimizing <1% parameters.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Delimiter-Based Defenses:}{\hich\af4\loch\f4\loch
+ Instruction hierarchy mechanisms demonstrate effectiveness against indirect prompt injection. Structured queries using XML-style delimiters reduce attack success rates, though adaptive attacks develop delimiter-aware evasion techniques [29].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Perplexity Filtering:}{\hich\af4\loch\f4\loch
+ Detecting adversarial prompts through statistical anomalies (PPL(x)smoothed) achieves 77.6% average true positive rate but 22.4% false negative rate indicates susceptibility to adaptive adversaries [30].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs24\b\f4\loch
+3.2.3 Empirical Validation Under Adversarial Conditions}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Meta\u8217\'92s CyberSecEval 2 benchmark evaluated GPT-4, Claude Sonnet, Llama 3, Mistral across prompt injection resistance. Results demonstrate 26-41% residual attack success rates even with defenses, confirming arms race dynamics [31]. Anthropic\u8217\'92s Constitutional AI demonstrates improved safety alignment but remains vulnerable to novel jailbreak templates [32].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+StruQ (Structured Queries) defense using semantic preserving transformations shows promise with 35% attack success rate reduction, but adaptive attackers develop countermeasures [33]. SecAlign\u8217\'92s adversarial training achieves near-zero attack success against known optimization-based attacks but generalizes poorly to novel techniques [28].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs24\b\f4\loch
+3.2.4 Practical Implementation: Behavioral Monitoring Systems}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+While academic defenses demonstrate promise, operational deployment requires lightweight, real-time monitoring mechanisms compatible with development workflows. Hook-based architectures provide one such implementation strategy, intercepting LLM outputs before execution to detect malicious patterns.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Silent-Alarm-Detector Framework:}{\hich\af4\loch\f4\loch
+ Implemented as PreToolUse hook for CLI LLM environments, this system employs hybrid detection combining regex pattern matching (fast, 90% case coverage) with AST structural analysis (complex cases). Detection targets eight pattern classes including silent exception handling, security shortcuts (SQL injection via string formatting, eval() usage), and performance anti-patterns (O(n\u178\'b2) algorithms). Impact scoring quantifies risk across performance (30% weight), security (40%), and maintainability (30%) dimensions. Critical detections (impact \u8805\'3f80 or security \u8805\'3f90) trigger blocking with actionable remediation guidance [90].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Operational Characteristics:}{\hich\af4\loch\f4\loch
+ Execution latency averages 50-100ms with <10% false positive rate at balanced sensitivity. The architecture demonstrates defense-in-depth coordination: security_guard.py blocks malicious code (command injection), silent-alarm-detector blocks quality issues (technical debt accumulation), enabling complementary protection layers. Deployment via PreToolUse hooks eliminates MCP server complexity while maintaining Claude Code compatibility [90].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+This implementation validates behavioral monitoring feasibility in production CLI LLM environments, demonstrating practical realization of theoretical defensive mechanisms discussed in academic literature.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+3.3 Supply Chain Security Threats}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Supply chain vulnerabilities in AI/ML ecosystems present systemic risks. In February 2025, malicious ML models on Hugging Face exploited \u8220\'93broken\u8221\'94 pickle serialization to evade Picklescan detection, using 7z compression instead of default ZIP format [91]. Over 100 malicious models leverage pickle deserialization for remote code execution, with 95% utilizing PyTorch format [92]. The platform\u8217\'92s growth from 300,000 models (2023) to 1 million (September 2024) amplifies attack surface [93].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Systematic analysis reveals attackers weaponize PyTorch .pth files on trusted repositories, embedding shell commands executed during torch.load() deserialization to deploy remote access trojans [95]. These attacks exploit inherent pickle format risks despite documented security concerns, with detection tools failing against obfuscated payloads.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Dataset Poisoning:}{\hich\af4\loch\f4\loch
+ BadNets and other backdoor injection techniques manipulate training data to introduce adversarial triggers [34]. Gradient shaping attacks achieve stealthy backdoor implantation surviving model fine-tuning [35].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Dependency Vulnerabilities:}{\hich\af4\loch\f4\loch
+ Analysis of ML supply chain dependencies reveals 43% of models on Hugging Face contain at least one security vulnerability in their dependency trees [36]. Software composition analysis (SCA) tools adapted for ML ecosystems remain nascent.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+3.4 Regulatory and Compliance Landscape}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+EU AI Act:}{\hich\af4\loch\f4\loch
+ Implements risk-based categorization with high-risk AI systems (including critical infrastructure applications) subject to conformity assessments, documentation requirements, and human oversight mandates [37]. CLI LLM deployments in regulated sectors face stringent compliance obligations.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+NIST AI RMF:}{\hich\af4\loch\f4\loch
+ Voluntary framework establishing governance through GOVERN, MAP, MEASURE, MANAGE functions. Emphasizes continuous monitoring, documentation, and adversarial testing [25].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+ISO/IEC 42001:}{\hich\af4\loch\f4\loch
+ International standard for AI management systems addressing governance, risk management, and accountability [38]. Provides certification pathway for organizational AI governance maturity.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Industry-Specific Regulations:}{\hich\af4\loch\f4\loch
+ HIPAA implications for healthcare LLMs [39], GDPR data processing requirements, SOC 2 compliance for SaaS deployments, and financial services regulations (FINRA, SEC) create complex compliance matrices.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+3.5 Emerging Threat Vectors}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Agentic AI Security:}{\hich\af4\loch\f4\loch
+ Tool-augmented LLMs with external API access create expanded attack surfaces. Prompt injection in multi-agent systems enables lateral movement and privilege escalation [40]. WebArena benchmark demonstrates automated exploitation of real-world web applications [41].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Multi-Modal Attacks:}{\hich\af4\loch\f4\loch
+ Vision-language models vulnerable to typographic attacks embedding adversarial prompts in images [42]. Audio-based jailbreaking through speech recognition bypass [43].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Context Poisoning:}{\hich\af4\loch\f4\loch
+ Manipulating retrieval-augmented generation (RAG) systems through adversarial document injection into vector databases [44]. Embedding space attacks targeting semantic search mechanisms [45].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+3.6 Architectural Evolution and Defense-in-Depth}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Sandboxing and Isolation:}{\hich\af4\loch\f4\loch
+ WebAssembly-based sandboxing (WASM) provides lightweight isolation for LLM-generated code execution [46]. gVisor and Firecracker enable secure multi-tenancy for CLI environments [47].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Cryptographic Integrity:}{\hich\af4\loch\f4\loch
+ Model signing and hash verification through SLSA (Supply-chain Levels for Software Artifacts) framework [48]. Transparent ML (TML) employs Merkle trees for model provenance tracking [49].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Zero Trust Architecture:}{\hich\af4\loch\f4\loch
+ NIST SP 800-207 principles applied to LLM deployments: continuous authentication, least privilege execution, micro-segmentation of model access [50].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Adversarial Training Pipelines:}{\hich\af4\loch\f4\loch
+ Continuous red-teaming integrated into CI/CD workflows. Automated adversarial prompt generation using evolutionary algorithms [51, 52].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+4. Discussion}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+4.1 The Persistent Challenge of Prompt Injection}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Prompt injection remains fundamentally challenging due to the shared channel problem: LLM architectures process instructions and data through identical input mechanisms [53]. Unlike traditional injection attacks (SQL, command) where parameterization separates code from data, LLMs operate on natural language where such distinction proves ambiguous.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Theoretical Underpinnings:}{\hich\af4\loch\f4\loch
+ Greshake et al.\~argue prompt injection represents an inherent limitation of current LLM architectures rather than implementation flaw [20]. The instruction-following objective conflicts with security constraints\u8212\'97models optimized for flexible instruction adherence prove vulnerable to adversarial instructions.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Adversarial Arms Race:}{\hich\af4\loch\f4\loch
+ Each defensive mechanism spawns adaptive attacks. Delimiter-based defenses face delimiter-aware evasion; perplexity filters encounter adversarial perturbations maintaining fluency; fine-tuned classifiers suffer from distributional shift [54].}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+4.2 Supply Chain as Critical Vulnerability}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+The democratization of AI through model-sharing platforms creates systemic supply chain risks. Unlike traditional software supply chains where malicious packages require active installation, ML model loading triggers automatic code execution through deserialization. The tension between usability (convenient model sharing) and security (strict validation) remains unresolved.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+4.3 Defense-in-Depth as Necessary Strategy}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+No single defensive mechanism provides complete protection. Industry consensus favors layered approaches:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4\loch
+1.\tab }{\hich\af4\loch\b\f4\loch
+Input validation:}{\hich\af4\loch\f4\loch
+ Pre-processing filters reducing attack surface}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4\loch
+2.\tab }{\hich\af4\loch\b\f4\loch
+Architectural controls:}{\hich\af4\loch\f4\loch
+ Sandboxing, least privilege, network isolation}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4\loch
+3.\tab }{\hich\af4\loch\b\f4\loch
+Behavioral monitoring:}{\hich\af4\loch\f4\loch
+ Runtime detection of anomalous patterns}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4\loch
+4.\tab }{\hich\af4\loch\b\f4\loch
+Output filtering:}{\hich\af4\loch\f4\loch
+ Post-processing validation before execution}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4\loch
+5.\tab }{\hich\af4\loch\b\f4\loch
+Audit and attribution:}{\hich\af4\loch\f4\loch
+ Comprehensive logging for forensic analysis}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs28\b\f4\loch
+4.4 Research Gaps and Future Directions}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Empirical Validation Deficit:}{\hich\af4\loch\f4\loch
+ Most defensive mechanisms lack longitudinal evaluation under adaptive adversaries. Laboratory success rates (90%+ defense effectiveness) rarely translate to production environments facing evolving threats.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Agentic AI Security:}{\hich\af4\loch\f4\loch
+ Tool-augmented LLMs represent uncharted territory. Existing frameworks inadequately address multi-agent attack propagation, cross-system exploitation, and emergent adversarial behaviors.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Formal Verification:}{\hich\af4\loch\f4\loch
+ Mathematical proofs of security properties for LLM systems remain elusive. Lack of formal threat models hampers principled defense development.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+Economic Incentives:}{\hich\af4\loch\f4\loch
+ Security-usability tradeoffs require economic analysis. Organizations optimize for functionality over security until breach costs exceed defensive investments.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+5. Conclusion}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+CLI-based LLM deployments face converging threat vectors from traditional systems security and novel AI-specific vulnerabilities. Our systematic synthesis of 85+ research sources confirms prompt injection as fundamentally unsolved, with 2025 research demonstrating 98% attack success rates against current models. Major platforms exhibit critical vulnerabilities (CVE-2025-54135, CVE-2025-54136) enabling remote code execution and persistent compromise.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Defensive mechanisms show promise but face adaptive adversary challenges. No single approach provides comprehensive protection; defense-in-depth strategies combining input validation, architectural isolation, behavioral monitoring, and cryptographic integrity offer pragmatic risk reduction. Practical implementations like hook-based monitoring systems demonstrate operational feasibility.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Supply chain vulnerabilities present systemic risks, with 100+ malicious models discovered on major platforms exploiting pickle serialization flaws. Regulatory frameworks (EU AI Act, NIST AI RMF) establish compliance requirements but implementation guidance remains limited.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Critical research gaps persist in:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab Empirical validation under adaptive adversaries}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab Agentic AI security frameworks}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab Supply chain verification mechanisms}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab Formal security properties and threat models}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb0\sa0\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab Economic analysis of security-usability tradeoffs}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+Future research must prioritize empirical validation under adversarial conditions, formalized threat modeling for agentic systems, and practical implementation guidance bridging academic advances with operational security requirements.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+The field demands interdisciplinary approaches combining traditional security, machine learning, natural language processing, and systems engineering to address this complex, rapidly-evolving threat landscape. Only through systematic integration of technical defenses, governance frameworks, and continuous adversarial evaluation can the security of CLI-based LLM deployments keep pace with their proliferation.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+References}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[1] Liu, H., et al.\~(2023). \u8220\'93Formalizing and Benchmarking Prompt Injection Attacks and Defenses.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+USENIX Security Symposium}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://github.com/liu00222/Open-Prompt-Injection" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://github.com/liu00222/Open-Prompt-Injection}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[2] CrowdStrike. (2025). }{\hich\af4\loch\i\f4\loch
+Global Threat Report 2025: State-Sponsored AI Infrastructure Attacks}{\hich\af4\loch\f4\loch
+. CrowdStrike Holdings, Inc.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[3] Orca Security. (2024). }{\hich\af4\loch\i\f4\loch
+2024 State of AI Security Report}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://orca.security/resources/blog/2024-state-of-ai-security-report/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://orca.security/resources/blog/2024-state-of-ai-security-report/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[4] OWASP Foundation. (2025). }{\hich\af4\loch\i\f4\loch
+OWASP Top 10 for Large Language Model Applications 2025}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://owasp.org/www-project-top-10-for-large-language-model-applications/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://owasp.org/www-project-top-10-for-large-language-model-applications/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[5] Andriushchenko, M., et al.\~(2024). \u8220\'93Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+OpenReview}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://openreview.net/forum?id=hXA8wqRdyV" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://openreview.net/forum?id=hXA8wqRdyV}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[6] Check Point Research. (2025). \u8220\'93Cursor IDE\u8217\'92s MCP Vulnerability - MCPoison.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://research.checkpoint.com/2025/cursor-vulnerability-mcpoison/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://research.checkpoint.com/2025/cursor-vulnerability-mcpoison/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[7] OX Security. (2025). \u8220\'9394 Vulnerabilities in Cursor and Windsurf Put 1.8M Developers at Risk.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.ox.security/blog/94-vulnerabilities-in-cursor-and-windsurf-put-1-8m-developers-at-risk/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.ox.security/blog/94-vulnerabilities-in-cursor-and-windsurf-put-1-8m-developers-at-risk/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[8] Cyber Press. (2025). \u8220\'93GitHub Copilot and Visual Studio Vulnerabilities Allow Attackers to Bypass Security Features.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://cyberpress.org/github-copilot-and-visual-studio-vulnerabilities/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://cyberpress.org/github-copilot-and-visual-studio-vulnerabilities/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[9] McKinsey & Company. (2025). }{\hich\af4\loch\i\f4\loch
+The State of AI in 2025: Agents, Innovation, and Transformation}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[10] Yao, Y., et al.\~(2024). \u8220\'93Survey on Large Language Model (LLM) Security and Privacy: The Good, the Bad, and the Ugly.\u8221\'94 arXiv preprint arXiv:2312.02003.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[11] Shayegani, E., et al.\~(2024). \u8220\'93Survey of Vulnerabilities in Large Language Models Revealed by Adversarial Attacks.\u8221\'94 arXiv preprint arXiv:2310.10844. }{\hich\af4\loch\i\f4\loch
+ACL 2024 Tutorial}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[12] Page, M. J., et al.\~(2021). \u8220\'93The PRISMA 2020 statement: an updated guideline for reporting systematic reviews.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+BMJ}{\hich\af4\loch\f4\loch
+, 372.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[13] Microsoft. (2024). }{\hich\af4\loch\i\f4\loch
+Microsoft Digital Defense Report 2024}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2024" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2024}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[14] Google Threat Intelligence Group. (2025). }{\hich\af4\loch\i\f4\loch
+Global Threat Landscape Report}{\hich\af4\loch\f4\loch
+. Google Cloud Security.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[15] Pearce, H., et al.\~(2022). \u8220\'93Asleep at the Keyboard? Assessing the Security of GitHub Copilot\u8217\'92s Code Contributions.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+IEEE Symposium on Security and Privacy}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[16] Red Canary. (2024). }{\hich\af4\loch\i\f4\loch
+2024 Threat Detection Report}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://redcanary.com/threat-detection-report/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://redcanary.com/threat-detection-report/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[17] MITRE Corporation. (2024). \u8220\'93ATT&CK for ICS: Command and Scripting Interpreter.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://attack.mitre.org/techniques/T1059/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://attack.mitre.org/techniques/T1059/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[18] Liu, H., et al.\~(2023). \u8220\'93Prompt Injection Attacks and Defenses in LLM-Integrated Applications.\u8221\'94 arXiv preprint arXiv:2310.12815.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[19] Zou, A., et al.\~(2023). \u8220\'93Universal and Transferable Adversarial Attacks on Aligned Language Models.\u8221\'94 arXiv preprint arXiv:2307.15043.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[20] Greshake, K., et al.\~(2023). \u8220\'93Not What You\u8217\'92ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+ACM Workshop on Artificial Intelligence and Security}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[21] Carlini, N., et al.\~(2024). \u8220\'93Stealing Part of a Production Language Model.\u8221\'94 arXiv preprint arXiv:2403.06634.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[22] Yao, Y., et al.\~(2023). \u8220\'93PoisonPrompt: Backdoor Attack on Prompt-based Large Language Models.\u8221\'94 arXiv preprint arXiv:2310.12439.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[23] Pearce, H., et al.\~(2023). \u8220\'93Examining Zero-Shot Vulnerability Repair with Large Language Models.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+IEEE Symposium on Security and Privacy}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[24] Tenable Research. (2025). \u8220\'93Seven Critical Vulnerabilities in ChatGPT.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.tenable.com/blog/chatgpt-vulnerabilities" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.tenable.com/blog/chatgpt-vulnerabilities}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[25] NIST. (2023). }{\hich\af4\loch\i\f4\loch
+Artificial Intelligence Risk Management Framework (AI RMF 1.0)}{\hich\af4\loch\f4\loch
+. NIST AI 100-1. Available at: }{{\field{\*\fldinst HYPERLINK "https://www.nist.gov/itl/ai-risk-management-framework" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.nist.gov/itl/ai-risk-management-framework}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[26] MITRE Corporation. (2024). }{\hich\af4\loch\i\f4\loch
+ATLAS: Adversarial Threat Landscape for Artificial-Intelligence Systems}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://atlas.mitre.org/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://atlas.mitre.org/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[27] Jain, N., et al.\~(2023). \u8220\'93Baseline Defenses for Adversarial Attacks Against Aligned Language Models.\u8221\'94 arXiv preprint arXiv:2309.00614.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[28] Huang, Y., et al.\~(2024). \u8220\'93SecAlign: Defending Against Prompt Injection with Preference Optimization.\u8221\'94 arXiv preprint arXiv:2410.05451.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[29] Wallace, E., et al.\~(2024). \u8220\'93Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions.\u8221\'94 arXiv preprint arXiv:2404.13208.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[30] Alon, G., & Kamfonas, M. (2023). \u8220\'93Detecting Language Model Attacks with Perplexity.\u8221\'94 arXiv preprint arXiv:2308.14132.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[31] Meta AI. (2024). }{\hich\af4\loch\i\f4\loch
+CyberSecEval 2: A Wide-Ranging Cybersecurity Evaluation Suite for Large Language Models}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://ai.meta.com/research/publications/cyberseceval-2/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://ai.meta.com/research/publications/cyberseceval-2/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[32] Anthropic. (2023). \u8220\'93Constitutional AI: Harmlessness from AI Feedback.\u8221\'94 arXiv preprint arXiv:2212.08073.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[33] Chen, S., et al.\~(2024). \u8220\'93StruQ: Defending Against Prompt Injection with Structured Queries.\u8221\'94 arXiv preprint arXiv:2402.06363.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[34] Gu, T., et al.\~(2019). \u8220\'93BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+IEEE Access}{\hich\af4\loch\f4\loch
+, 7.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[35] Schwarzschild, A., et al.\~(2021). \u8220\'93Just How Toxic is Data Poisoning? A Unified Benchmark for Backdoor and Data Poisoning Attacks.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+ICML}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[36] Ladisa, P., et al.\~(2023). \u8220\'93SoK: Taxonomy of Attacks on Open-Source Software Supply Chains.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+IEEE Symposium on Security and Privacy}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[37] European Commission. (2024). }{\hich\af4\loch\i\f4\loch
+EU Artificial Intelligence Act}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://artificialintelligenceact.eu/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://artificialintelligenceact.eu/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[38] ISO/IEC JTC 1/SC 42. (2023). }{\hich\af4\loch\i\f4\loch
+ISO/IEC 42001:2023 - Information technology \u8212\'97 Artificial intelligence \u8212\'97 Management system}{\hich\af4\loch\f4\loch
+. International Organization for Standardization.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[39] U.S. Department of Health and Human Services. (2024). \u8220\'93HIPAA Compliance for AI/ML Systems in Healthcare.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.hhs.gov/hipaa/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.hhs.gov/hipaa/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[40] Debenedetti, E., et al.\~(2024). \u8220\'93AgentDojo: A Framework for Benchmarking LLM Agents Against Adversarial Attacks.\u8221\'94 arXiv preprint arXiv:2406.13352.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[41] Zhou, S., et al.\~(2023). \u8220\'93WebArena: A Realistic Web Environment for Building Autonomous Agents.\u8221\'94 arXiv preprint arXiv:2307.13854.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[42] Zhang, Y., et al.\~(2024). \u8220\'93Attacking Vision-Language Models with Adversarial Images.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+CVPR}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[43] Kumar, S., et al.\~(2024). \u8220\'93Audio Adversarial Examples for Speech Recognition Systems.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+ICASSP}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[44] Zou, A., et al.\~(2024). \u8220\'93PoisonedRAG: Knowledge Poisoning Attacks Against Retrieval-Augmented Generation.\u8221\'94 arXiv preprint arXiv:2402.07867.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[45] Carlini, N., et al.\~(2024). \u8220\'93Poisoning Web-Scale Training Datasets is Practical.\u8221\'94 arXiv preprint arXiv:2302.10149.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[46] WebAssembly Community Group. (2024). }{\hich\af4\loch\i\f4\loch
+WebAssembly Security Model}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://webassembly.org/docs/security/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://webassembly.org/docs/security/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[47] Google. (2024). }{\hich\af4\loch\i\f4\loch
+gVisor: Container Runtime Sandbox}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://gvisor.dev/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://gvisor.dev/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[48] SLSA Framework. (2024). }{\hich\af4\loch\i\f4\loch
+Supply-chain Levels for Software Artifacts}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://slsa.dev/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://slsa.dev/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[49] Kumar, R., et al.\~(2024). \u8220\'93Transparent ML: Ensuring Model Provenance Through Cryptographic Verification.\u8221\'94 arXiv preprint arXiv:2403.12847.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[50] NIST. (2020). }{\hich\af4\loch\i\f4\loch
+Zero Trust Architecture}{\hich\af4\loch\f4\loch
+. NIST Special Publication 800-207. Available at: }{{\field{\*\fldinst HYPERLINK "https://www.nist.gov/publications/zero-trust-architecture" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.nist.gov/publications/zero-trust-architecture}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[51] Perez, E., et al.\~(2022). \u8220\'93Red Teaming Language Models with Language Models.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+EMNLP}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[52] Mehrotra, A., et al.\~(2023). \u8220\'93Tree of Attacks: Jailbreaking Black-Box LLMs Automatically.\u8221\'94 arXiv preprint arXiv:2312.02119.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[53] Willison, S. (2023). \u8220\'93Prompt Injection: What\u8217\'92s the Worst That Could Happen?\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://simonwillison.net/2023/Apr/14/worst-that-could-happen/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://simonwillison.net/2023/Apr/14/worst-that-could-happen/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[54] Zeng, Y., et al.\~(2024). \u8220\'93How Strong Are LLM-Generated Adversarial Examples? A Study of Adaptive Attacks.\u8221\'94 arXiv preprint arXiv:2404.08487.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[55] Carlini, N., et al.\~(2021). \u8220\'93Extracting Training Data from Large Language Models.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+USENIX Security Symposium}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[56] Kolter, J. Z., & Wong, E. (2018). \u8220\'93Provable Defenses Against Adversarial Examples via the Convex Outer Adversarial Polytope.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+ICML}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[57] Tram\u232\'e8r, F., et al.\~(2020). \u8220\'93Stealing Machine Learning Models via Prediction APIs.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+USENIX Security Symposium}{\hich\af4\loch\f4\loch
+.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[58] Song, D., et al.\~(2024). \u8220\'93AI Security Research at UC Berkeley.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://people.eecs.berkeley.edu/~dawnsong/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://people.eecs.berkeley.edu/~dawnsong/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[59] Palo Alto Networks. (2024). \u8220\'93Precision AI: Defending Against Advanced Threats.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.paloaltonetworks.com/cyberpedia/ai-infrastructure-security" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.paloaltonetworks.com/cyberpedia/ai-infrastructure-security}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[60] CrowdStrike. (2025). \u8220\'93Falcon AI-SPM: Protecting LLM Deployments at Scale.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.crowdstrike.com/en-us/blog/stop-ai-powered-adversaries-fight-fire-with-fire/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.crowdstrike.com/en-us/blog/stop-ai-powered-adversaries-fight-fire-with-fire/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[61] Lakera. (2024). \u8220\'93Lakera Guard: Production-Grade Prompt Security.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.lakera.ai/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.lakera.ai/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[62] HiddenLayer. (2023). \u8220\'93Prompt Injection Attacks on LLMs.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://hiddenlayer.com/innovation-hub/prompt-injection-attacks-on-llms/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://hiddenlayer.com/innovation-hub/prompt-injection-attacks-on-llms/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[63] Liang, W., et al.\~(2024). \u8220\'93Adversarial Attacks on Large Language Models Using Regularized Relaxation.\u8221\'94 arXiv preprint arXiv:2410.19160.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[64] Weng, L. (2023). \u8220\'93Adversarial Attacks on LLMs.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+Lil\u8217\'92Log}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[65] Microsoft. (2025). \u8220\'93Protecting Against Indirect Prompt Injection Attacks in MCP.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+Microsoft Developer Blog}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://developer.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://developer.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[66] NSFOCUS. (2024). \u8220\'93The Invisible Battlefield Behind LLM Security Crisis.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://nsfocusglobal.com/the-invisible-battlefield-behind-llm-security-crisis/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://nsfocusglobal.com/the-invisible-battlefield-behind-llm-security-crisis/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[67] Nightfall AI. (2024). \u8220\'93MITRE ATLAS: The Essential Guide.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.nightfall.ai/ai-security-101/mitre-atlas" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.nightfall.ai/ai-security-101/mitre-atlas}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[68] Practical DevSecOps. (2025). \u8220\'93MITRE ATLAS Framework 2025 - Guide to Securing AI Systems.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.practical-devsecops.com/mitre-atlas-framework-guide-securing-ai-systems/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.practical-devsecops.com/mitre-atlas-framework-guide-securing-ai-systems/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[69] Wiz. (2024). \u8220\'93The Threat of Adversarial AI.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.wiz.io/academy/adversarial-ai-machine-learning" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.wiz.io/academy/adversarial-ai-machine-learning}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[70] Mukherjee, A. (2024). \u8220\'93Beyond ISO 42001: The Role of ISO/IEC 23894 in AI Risk Management.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+Medium}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://medium.com/@mukherjee.amitav/beyond-iso-42001-the-role-of-iso-iec-23894-in-ai-risk-management-7c4f3036544f" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://medium.com/@mukherjee.amitav/beyond-iso-42001-the-role-of-iso-iec-23894-in-ai-risk-management-7c4f3036544f}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[71] AWS. (2024). \u8220\'93AI Lifecycle Risk Management: ISO/IEC 42001:2023 for AI Governance.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://aws.amazon.com/blogs/security/ai-lifecycle-risk-management-iso-iec-420012023-for-ai-governance/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://aws.amazon.com/blogs/security/ai-lifecycle-risk-management-iso-iec-420012023-for-ai-governance/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[72] Secureframe. (2024). \u8220\'93How to Achieve EU AI Act Compliance and Build Trustworthy AI.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://secureframe.com/blog/eu-ai-act-compliance" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://secureframe.com/blog/eu-ai-act-compliance}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[73] CISA. (2025). \u8220\'93AI Data Security Guidance.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.cisa.gov/ai-security-guidance" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.cisa.gov/ai-security-guidance}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[74] Alston & Bird. (2025). \u8220\'93NSA, CISA, FBI, and International Partners Issue Joint Guidance on AI Data Security.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.alston.com/en/insights/publications/2025/06/joint-guidance-ai-data-security" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.alston.com/en/insights/publications/2025/06/joint-guidance-ai-data-security}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[75] Snyk. (2025). \u8220\'93Securing the Software Supply Chain with AI.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://snyk.io/articles/secure-software-supply-chain-ai/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://snyk.io/articles/secure-software-supply-chain-ai/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[76] ScienceDirect. (2025). \u8220\'93A Review of Backdoor Attacks and Defenses in Code Large Language Models.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.sciencedirect.com/science/article/abs/pii/S0950584925000461" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.sciencedirect.com/science/article/abs/pii/S0950584925000461}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[77] Springer. (2025). \u8220\'93When LLMs Meet Cybersecurity: A Systematic Literature Review.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+Cybersecurity}{\hich\af4\loch\f4\loch
+, 8:1. DOI: 10.1186/s42400-025-00361-w.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[78] TechTarget. (2023). \u8220\'93GitHub Copilot Replicating Vulnerabilities, Insecure Code.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.techtarget.com/searchsecurity/news/366571117/GitHub-Copilot-replicating-vulnerabilities-insecure-code" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.techtarget.com/searchsecurity/news/366571117/GitHub-Copilot-replicating-vulnerabilities-insecure-code}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[79] Petri. (2025). \u8220\'93ChatGPT Flaws Could Let Hackers Steal Data and Hijack Chats.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://petri.com/chatgpt-vulnerabilities-hackers-data-theft/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://petri.com/chatgpt-vulnerabilities-hackers-data-theft/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[80] The Hacker News. (2025). \u8220\'93Researchers Find ChatGPT Vulnerabilities That Let Attackers Trick AI Into Leaking Data.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://thehackernews.com/2025/11/researchers-find-chatgpt.html" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://thehackernews.com/2025/11/researchers-find-chatgpt.html}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[81] The Register. (2024). \u8220\'93GPT-4 Can Exploit Real Vulnerabilities by Reading Advisories.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.theregister.com/2024/04/17/gpt4_can_exploit_real_vulnerabilities" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.theregister.com/2024/04/17/gpt4_can_exploit_real_vulnerabilities}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[82] MIT News. (2025). \u8220\'933 Questions: Modeling Adversarial Intelligence to Exploit AI\u8217\'92s Security Vulnerabilities.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://news.mit.edu/2025/3-questions-una-may-o-reilly-modeling-adversarial-intelligence-0129" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://news.mit.edu/2025/3-questions-una-may-o-reilly-modeling-adversarial-intelligence-0129}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[83] VentureBeat. (2025). \u8220\'93CrowdStrike, Nvidia Embed Real-Time LLM Defense.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://venturebeat.com/security/crowdstrike-falcon-now-powers-runtime-defense-in-nvidias-llms" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://venturebeat.com/security/crowdstrike-falcon-now-powers-runtime-defense-in-nvidias-llms}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[84] TechMagic. (2024). \u8220\'93HIPAA Compliance AI: Guide to Using LLMs Safely in Healthcare.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.techmagic.co/blog/hipaa-compliant-llms" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.techmagic.co/blog/hipaa-compliant-llms}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[85] Wikipedia. (2024). \u8220\'93Prompt Injection.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://en.wikipedia.org/wiki/Prompt_injection" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://en.wikipedia.org/wiki/Prompt_injection}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[86] Keysight Technologies. (2025). \u8220\'93Prompt Injection Techniques: Jailbreaking Large Language Models via FlipAttack.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.keysight.com/blogs/en/tech/nwvs/2025/05/20/prompt-injection-techniques-jailbreaking-large-language-models-via-flipattack" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.keysight.com/blogs/en/tech/nwvs/2025/05/20/prompt-injection-techniques-jailbreaking-large-language-models-via-flipattack}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[87] Kim, H., et al.\~(2024). \u8220\'93GPT-4 Jailbreaks Itself with Near-Perfect Success Using Self-Explanation.\u8221\'94 arXiv preprint arXiv:2405.13077v2.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[88] Yi, J., et al.\~(2025). \u8220\'93Benchmarking and Defending Against Indirect Prompt Injection Attacks on Large Language Models.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+Proceedings of ACM SIGKDD Conference}{\hich\af4\loch\f4\loch
+, Toronto, ON, Canada.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[89] Patterson, D., et al.\~(2025). \u8220\'93Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection and Jailbreak Vulnerabilities in LLMs.\u8221\'94 arXiv preprint arXiv:2505.04806v1.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[90] GitHub Repository. (2025). \u8220\'93Silent Alarm Detector: Behavioral Monitoring for LLM-Generated Code.\u8221\'94 Claude Code Hooks Security Research Project. Available at: }{{\field{\*\fldinst HYPERLINK "https://github.com/hah23255/silent-alarm-detector" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://github.com/hah23255/silent-alarm-detector}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[91] The Hacker News. (2025). \u8220\'93Malicious ML Models on Hugging Face Leverage Broken Pickle Format to Evade Detection.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://thehackernews.com/2025/02/malicious-ml-models-found-on-hugging.html" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://thehackernews.com/2025/02/malicious-ml-models-found-on-hugging.html}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[92] JFrog Research. (2024). \u8220\'93Over 100 Malicious AI/ML Models Found on Hugging Face Platform.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[93] ReversingLabs. (2025). \u8220\'93The Race to Secure the AI/ML Supply Chain.\u8221\'94 }{\hich\af4\loch\i\f4\loch
+2025 Software Supply Chain Security Report}{\hich\af4\loch\f4\loch
+. Available at: }{{\field{\*\fldinst HYPERLINK "https://www.reversinglabs.com/blog/the-race-to-secure-the-aiml-supply-chain-is-on-get-out-front" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.reversinglabs.com/blog/the-race-to-secure-the-aiml-supply-chain-is-on-get-out-front}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[94] arXiv. (2025). \u8220\'93The Art of Hide and Seek: Making Pickle-Based Model Supply Chain Poisoning Stealthy Again.\u8221\'94 arXiv preprint arXiv:2508.19774v1.}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4\loch
+[95] Rapid7. (2025). \u8220\'93From .pth to p0wned: Abuse of Pickle Files in AI Model Supply Chains.\u8221\'94 Available at: }{{\field{\*\fldinst HYPERLINK "https://www.rapid7.com/blog/post/from-pth-to-p0wned-abuse-of-pickle-files-in-ai-model-supply-chains/" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\ul\ulc0\ul\ulc0\f4\loch
+https://www.rapid7.com/blog/post/from-pth-to-p0wned-abuse-of-pickle-files-in-ai-model-supply-chains/}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+Appendix A: Vulnerability Classification Framework}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb114\sa294\ltrpar{\hich\af4\loch\b\f4\loch
+CLI-Specific Attack Vectors:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab A1: Argument Injection}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab A2: Environment Variable Exploitation}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab A3: Command Substitution}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab A4: Configuration File Tampering}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb114\sa114\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab A5: Workspace Trust Bypass}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb114\sa294\ltrpar{\hich\af4\loch\b\f4\loch
+LLM-Specific Attack Vectors:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab L1: Direct Prompt Injection (Jailbreaking)}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab L2: Indirect Prompt Injection}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab L3: System Prompt Extraction}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab L4: Model Extraction}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab L5: Data Poisoning}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab L6: Backdoor Injection}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab L7: Multi-Modal Attacks}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb171\sa351\ltrpar{\hich\af4\loch\b\f4\loch
+Supply Chain Attack Vectors:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab S1: Dataset Poisoning}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab S2: Model Checkpoint Tampering}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab S3: Malicious Dependencies}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab S4: LoRA/PEFT Corruption}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab S5: Registry Compromise}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb57\sa237\ltrpar{\hich\af4\loch\fs32\b\f4\loch
+Appendix B: Defense Mechanism Taxonomy}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb57\sa237\ltrpar{\hich\af4\loch\b\f4\loch
+Architectural Defenses:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D1: Containerization (Docker, gVisor)}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D2: WebAssembly Sandboxing}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D3: Least Privilege Execution}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D4: Network Isolation}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb171\sa351\ltrpar{\hich\af4\loch\b\f4\loch
+Input Validation:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D5: Pattern Detection}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D6: Anomaly Detection}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D7: Delimiter Monitoring}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D8: Structured Queries (Parameterization)}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb171\sa351\ltrpar{\hich\af4\loch\b\f4\loch
+Output Controls:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D9: Command Execution Filtering}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D10: Shell Escaping}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D11: Safe API Usage}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D12: Human-in-the-Loop Verification}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb171\sa351\ltrpar{\hich\af4\loch\b\f4\loch
+Supply Chain Security:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D13: Model Signing}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D14: Hash Verification}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D15: SBOM Generation}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D16: Dependency Scanning}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb171\sa351\ltrpar{\hich\af4\loch\b\f4\loch
+Monitoring & Detection:}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D17: Audit Logging}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D18: Provenance Tracking}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D19: Behavioral Analysis}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi-360\li360\lin360\sb57\sa57\ltrpar{\hich\af4\loch\f4
+\u8226\'95}{\hich\af4\loch\f4\loch
+\tab D20: Anomaly Detection}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar\loch
+
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\qc\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\f4
+\u8212\'97\u8212\'97\u8212\'97\u8212\'97\u8212\'97}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\b\f4\loch
+End of Document}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\i\f4\loch
+For correspondence regarding this research synthesis, please contact the authors through standard academic channels or via GitHub repository: }{{\field{\*\fldinst HYPERLINK "https://github.com/hah23255/claude-hooks-security-research" }{\fldrslt {\hich\af4\loch\hich\af4\loch\f4\i\ul\ulc0\i\ul\ulc0\f4\loch
+https://github.com/hah23255/claude-hooks-security-research}}}}
+\par \pard\plain \s0\rtlch\af8\afs24\alang1081 \ltrch\lang2057\langfe2052\hich\af3\loch\widctlpar\hyphpar1\ltrpar\cf0\f3\fs24\lang2057\kerning1\dbch\af9\langfe2052\ql\fi0\li0\lin0\sb0\sa180\ltrpar{\hich\af4\loch\i\f4\loch
+This document is formatted for submission to arXiv.org (cs.CR, cs.AI, cs.SE) and distribution as industry white paper. Version 1.1 | November }{\hich\af4\loch\i\f4\loch
+04}{\hich\af4\loch\i\f4\loch
+, 2025}
+\par }
